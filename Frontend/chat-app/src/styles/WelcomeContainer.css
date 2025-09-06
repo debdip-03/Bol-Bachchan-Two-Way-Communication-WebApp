@@ -1,0 +1,15 @@
+.welcome-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+    img {
+        height: 20rem;
+    }
+
+    span {
+        color: rebeccapurple;
+    }
+}

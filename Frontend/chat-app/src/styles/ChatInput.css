@@ -1,0 +1,96 @@
+.chat-input {
+    display: grid;
+    grid-template-columns: 5% 95%;
+    align-items: center;
+    background-color: #00002B;
+    padding: 0 2rem 0.3rem;
+
+    .button-container {
+        display: flex;
+        align-items: center;
+        color: white;
+        gap: 1rem;
+
+        .emoji {
+            position: relative;
+
+            svg {
+                font-size: 1.5rem;
+                color: yellow;
+                cursor: pointer;
+            }
+
+            .emoji-picker-react {
+                position: absolute;
+                top: -475px;
+                background-color: midnightblue;
+                box-shadow: 0 5px 10px mediumpurple;
+                border-color: mediumpurple;
+
+                .emoji-scroll-wrapper::-webkit-scrollbar {
+                    background-color: midnightblue;
+                    width: 5px;
+                }
+
+                .emoji-scroll-wrapper::-webkit-scrollbar-thumb {
+                    background-color: mediumpurple;
+                    border-radius: 4px;
+                }
+
+                h2 {
+                    background-color: midnightblue;
+                }
+
+                input {
+                    background-color: midnightblue;
+                }
+
+                .emoji-group:before {
+                    background-color: midnightblue;
+                }
+            }
+        }
+    }
+
+    .input-container {
+        width: 100%;
+        border-radius: 2rem;
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        background-color: darkslategray;
+
+        input {
+            width: 90%;
+            height: 60%;
+            background-color: transparent;
+            color: white;
+            border: none;
+            padding-left: 1rem;
+            font-size: 1.2rem;
+
+            &::selection {
+                background-color: mediumpurple;
+            }
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        button {
+            padding: 0.3rem 2rem;
+            border-radius: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: darkviolet;
+            border: none;
+
+            svg {
+                font-size: 2rem;
+                color: white;
+            }
+        }
+    }
+}
